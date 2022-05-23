@@ -1,0 +1,49 @@
+#box{
+   
+    margin-left: 258px;
+    margin-right: 243px;
+    padding-top: 46px;
+    padding-bottom: 59px;
+    border-radius: 26px;
+    background-image:url('https://ia800402.us.archive.org/26/items/03-05-2016_Images_Images_1-30/01_PT_hero_42_153645159.jpg');
+}
+#heading{
+    font-family: 'Roboto', sans-serif;
+}
+
+#mailid{
+    color: rgb(11, 10, 11);
+    font-size: 27px;
+}
+
+#passlabel{
+    color: rgb(13 12 13);
+    font-size: 27px;
+}
+#email{
+    padding: 10px;
+    padding-right: 86px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#password{
+    padding: 10px;
+    padding-right: 86px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#resetbtn{
+    padding: 6px;
+    border-radius: 8px;
+}
+
+
+#submitbtn{
+    padding: 6px;
+    border-radius: 8px;
+    margin-left: 41px;
+}
+body{
+    background-color: aliceblue;
+}

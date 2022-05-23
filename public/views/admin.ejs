@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title> UPSMART Solutions </title>
+	<link rel="stylesheet" href="admin.css">
+	<style>
+		#mylink{
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body align='center'>
+    <div>
+			
+			<img src="http://www.upsmartsolutions.com/wp-content/uploads/2022/01/1080.png" width="200" height="100" alt="UpSmart Solutions India Pvt. Ltd.," id="logo">
+
+	</div>
+	<h2 id="heading">ADMIN SECRET PAGE</h2>
+
+	<div id='box'>
+		
+	<form id="table"action="/adminloginonly" method="POST">
+		
+			
+			<label id="mailid">Email ID</label>
+			<input type ="email" id = 'email' name="email" placeholder="Username" required>
+			<br><br>
+
+			<label id="passlabel">Password</label>
+			<input type="password" id="password" name="password" placeholder="password" required>
+			<br><br>
+
+			
+			<button id="submitbtn" type ="submit">Submit</button>
+		
+            
+        </form>
+        <br>
+	</div >
+    
+    <button onclick = "table()" id="submitbtn" type ="submit">SEARCH</button>
+    
+        <div class="form-popup" id="myForm">
+            <form action="/" class="form-container">
+              <h1>SEARCH BAR FOR ADMIN</h1>
+          
+              <!-- <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required> -->
+          
+              <button type="submit" class="btn">SEARCH</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        
+        <!-- <div id = "table1">
+            <table id = "pop_up" border = '1px';>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>FULL NAME</th>
+                        <th>ADDRESS</th>
+                        <th>PHONE NUMBER</th>
+                        <th>EMAIL</th>
+                        <th>PASSWORD</th>
+                    </tr>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </div> -->
+
+    
+    
+
+
+		
+<script src="table.js"></script>
+</body>
+</html>

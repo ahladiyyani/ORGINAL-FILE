@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user login page</title>
+    <link rel="stylesheet" href="userloginpage.css">
+    
+</head>
+<body>
+    <!-- <h1 id = "head">hello world</h1> -->
+    <div id = "navbar">
+        <nav id = "nav"> 
+             <!-- <label class = "logo">Up Smart</label>  -->
+            <!-- <input type = "checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i style='font-size:24px' class='fas'>&#xf0c9;</i>
+                <input type="text" placeholder="Search..">  -->
+            <!-- </label> -->
+            <ul>  
+            <li>  
+            <a href="/"> Logout </a>  
+            </li>  
+            <li>  
+            <a href="/editpassword"> update User </a>  
+            </li>  
+            <li>  
+            <a href="/deletePassword"> Delete Account</a>  
+            </li>  
+              </ul>  
+            </nav><hr>
+    </div>
+    <table border="2px" id="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <%data.forEach((value) =>
+                    {%>
+                    <td><%=value.Id%></td>
+                    <td><%=value.fullname%></td>
+                    <td><%=value.address%></td>
+                    <td><%=value.phonenumber%></td>
+                    
+                    <td> <%= value.emailid %> </td>
+                    <td> <%= value.password %> </td>
+
+                    <%})%>
+                    
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>

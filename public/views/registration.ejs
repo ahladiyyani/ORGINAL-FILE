@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang = "en">
 <head>
 	<meta charset = "UTF-8">
-	<title> My Form </title>
+	<title> UPSMART Solutions </title>
+	<link rel="stylesheet" href="registration.css">
 	<style>
 		#mylink{
 			font-size: 25px;
@@ -11,26 +11,59 @@
 	</style>
 </head>
 <body align='center'>
-        <header>
-		<h1>Register</h1>
-	</header>
+    <div>
+			
+			<img src="http://www.upsmartsolutions.com/wp-content/uploads/2022/01/1080.png" width="200" height="100" alt="UpSmart Solutions India Pvt. Ltd.," id="logo">
 
-	<form action="/registrationInsert" method="POST">
-		<fieldset>
-				
-			<label>Email ID</label>
-			<input type ="email" id = 'email' name="email" placeholder="abc@example.com" required>
+	</div>
+	<h2 id="heading">Register to join UPSMART Solutions</h2>
+
+	<div id='container'>
+		
+	<form action="/registrationInsert" method="POST" enctype = "multipart/form-data">
+		
+			<p>upload your photo</p>
+			<input type="file" name="image" accept='image/*'><br><br>
+
+
+			<label id="firstn">Full name</label>
+			<input type="text" id="firstname" name="fullname" placeholder="Full Name" required>
+			<br><br>
+			
+			<label id="adres">Address</label>
+			<input type="text" id="address" name="address" placeholder="address" required>
 			<br><br>
 
-			<label>Password</label>
-			<input type="password" id = "password" name="password" required>
+			<label id="ph">Phone Number</label>
+			<input type="number" id="phonenumber" name="phonenumber" placeholder="phone number" required>
+			<br><br>
+			
+			<label id="mailid">Email ID</label>
+			<input type ="email" id = 'email' name="emailid" placeholder="Username" required>
 			<br><br>
 
-			<button type ="reset">Reset</button>
-			<button type ="submit">Submit</button>
-		</fieldset>
+			<label id="passlabel">Password</label>
+			<input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+			<br><br>
+			<!-- <input type="password" id = "password" name="password" placeholder="Password" required> -->
+			<!-- <br><br> -->
+
+			
+			<label id="cnfrmpasslabel">Confirm Password</label>
+			<input type="password" id="cnfrmpassword" name="confirmpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+			<br><br>
+			<!-- <input type="password" id = "cnfrmpassword" name="confirmpassword" placeholder="Confirm Password" required> -->
+			<!-- <br><br> -->
+
+			<button id="resetbtn" type ="reset">Reset</button>
+			<button id="submitbtn" type ="submit">Register</button>
+		
+		
         </form>
+	</div>
         <br>
+
+		<a id="mylink" href="/">Log In</a>
 
 </body>
 </html>

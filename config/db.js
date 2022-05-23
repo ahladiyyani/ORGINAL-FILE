@@ -3,10 +3,10 @@ var mysql = require('mysql2');
 // connect to the db
 dbConnectionInfo = {
   host: "localhost",
-  port: "3308",
+  port: "3306",
   user: "root",
   password: "root",
-  database:"testdb"
+  database:"newdb"
 };
 
 //For mysql single connection
